@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screen and Audio Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/build/css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div className="w-[60rem] flex items-center flex-col p-[1.5rem] shadow-3xl">
+        <div className="flex items-center justify-between mb-1rem">
+          <div className="flex gap-[0.5rem] items-center">
+            <img src="/image/v.svg" alt="help-logo" />
+            <p className="font-[Sora] font-bold flex-col text-[#120B48]">HelpMeOut</p>
+          </div>
+          <div className="flex items-center gap-[0.75rem]">
+            <img src="/image/set.svg" alt="" />
+            <img src="/image/close.svg" alt="" className="cursor-pointer" />
+          </div>
+        </div>
+        <p className="font-['Work_Sans'] font-normal text-[0.875rem] text-[#413C6D] max-w-[14.0625rem] w-full mb-2rem leading-normal">
+          This extension helps you record and share help videos with ease.
+        </p>
+        <div className="max-w-[15.75rem] w-full pr-2rem pl-2rem mb-[1.5rem]">
+          <div className="max-w-[11.8rem] flex justify-between items-center mx-auto">
+            <div className="flex justify-center items-center flex-col gap-[0.5rem]">
+              <img src="/image/screen.svg" alt="" />
+              <p className="text-[#928FAB] font-['Work_Sans'] text-[0.875rem] font-medium">
+                Full Screen
+              </p>
+            </div>
+            <div className="flex justify-center items-center gap-[0.5rem] flex-col">
+              <img src="/image/tab.svg" alt="" />
+              <p className="text-[#413C6D] font-['Work_Sans'] text-[0.875rem] font-semibold">
+                Current Tab
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="p-[0.75rem] pl-[1rem] max-w-[15.75rem] w-full mb-[1.5rem] border-2 border-primary-600 rounded-[0.75rem]">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-[0.5rem]">
+              <img src="/image/cam.svg" alt="" />
+              <p className="text-[#100A42] font-['Work_Sans'] font-semibold text-[0.875rem]">
+                Camera
+              </p>
+            </div>
+            <img
+              src='/images/t-on.svg'
+              className="cursor-pointer"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="p-[0.75rem] pl-[1rem] max-w-[15.75rem] w-full mb-[1.5rem] border-2 border-primary-600 rounded-[0.75rem]">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-[0.5rem]">
+              <img src="/image/audio.svg" alt="" />
+              <p className="text-[#100A42] font-['Work_Sans'] font-semibold text-[0.875rem]">
+                Audio
+              </p>
+            </div>
+            <img
+              src='/images/t-on.svg'
+              className="cursor-pointer"
+            />
+          </div>
+        </div>
+        <button id="startRecording"  className="flex justify-center items-center rounded-[0.75rem] bg-[#120B48] hover:bg-[#928FAB] mb-1rem p-1rem text-[#FAFDFF] text-1rem font-['Work_Sans'] font-medium cursor-pointer" >Start Recording</button>
+      </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
